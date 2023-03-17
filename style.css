@@ -1,0 +1,252 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+header{
+    height: 100px;
+    width: 100%;
+    background-color: #eeeeee;
+    display: flex;
+    align-items: center;
+}
+header img{
+    padding-left: 1%;
+}
+header .buttons{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    padding-right: 7%;
+}
+header button{
+    height: 80%;
+    font-size: 18pt;
+    margin-right: 1%;
+    width: 10%;
+    min-width: 90px;
+    border-right: none;
+    border-left: none;
+    border-width: 2px;
+}
+header button:hover {
+    background-color: lightgray;
+    transition: 0.7s;
+}
+header a{
+    color: black;
+    text-decoration: none;
+}
+
+main{
+    font-family: arial;
+    width: 100%;
+    min-height: 1200px;
+    background: url(airbus.png) no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eeeeee;
+}
+.main-recomendations{
+    padding-top: 300px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+.main-recomendations-container{
+    border-radius: 10px;
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color: rgba(255, 255, 255, 0.4);
+    min-height: 200px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.main-recomendations-container h1{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+    font-size: 20pt;
+}
+.main-recomendations-container p{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16pt;
+    margin-top: 0;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	height: 200px;
+	margin: 100px auto 0;
+	position: relative;
+	width: 700px;
+}
+.wrapper__text{
+    width: 26em;
+    font-weight:400;
+    font-size: 16pt;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.slider {
+	height: inherit;
+	overflow: hidden;
+	position: relative;
+	width: inherit;
+	-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	-moz-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	-o-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+}
+.slides {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f8ff;
+	height: inherit;
+	opacity: 0;
+	position: absolute;
+	width: inherit;
+	z-index: 0;
+	-webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-o-transform: scale(1.5);
+	transform: scale(1.5);
+	-webkit-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+	-moz-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+	-o-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+	transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+}
+#slide1:checked ~ .slider > .slide1,
+#slide2:checked ~ .slider > .slide2,
+#slide3:checked ~ .slider > .slide3,
+#slide4:checked ~ .slider > .slide4,
+#slide5:checked ~ .slider > .slide5,
+#slide6:checked ~ .slider > .slide6,
+#slide7:checked ~ .slider > .slide7,
+#slide8:checked ~ .slider > .slide8,
+#slide9:checked ~ .slider > .slide9,
+#slide10:checked ~ .slider > .slide10,
+#slide11:checked ~ .slider > .slide11,
+#slide12:checked ~ .slider > .slide12,
+#slide13:checked ~ .slider > .slide13,
+#slide14:checked ~ .slider > .slide14,
+#slide15:checked ~ .slider > .slide15,
+#slide16:checked ~ .slider > .slide16,
+#slide17:checked ~ .slider > .slide17,
+#slide18:checked ~ .slider > .slide18,
+#slide19:checked ~ .slider > .slide19,
+#slide20:checked ~ .slider > .slide20,
+#slide21:checked ~ .slider > .slide21,
+#slide22:checked ~ .slider > .slide22,
+#slide23:checked ~ .slider > .slide23,
+#slide24:checked ~ .slider > .slide24,
+#slide25:checked ~ .slider > .slide25,
+#slide26:checked ~ .slider > .slide26,
+#slide27:checked ~ .slider > .slide27,
+#slide28:checked ~ .slider > .slide28,
+#slide29:checked ~ .slider > .slide29,
+#slide30:checked ~ .slider > .slide30 {
+	opacity: 1;
+	z-index: 1;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}
+.wrapper > input {
+	display: none;
+}
+.wrapper .controls {
+	left: 50%;
+}
+.wrapper label {
+	cursor: pointer;
+	display: inline-block;
+	height: 8px;
+	margin: 25px 12px 0 16px;
+	position: relative;
+	width: 8px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-transition: background ease-in-out .5s;
+	-moz-transition: background ease-in-out .5s;
+	-o-transition: background ease-in-out .5s;
+	transition: background ease-in-out .5s;
+}
+.wrapper label:hover, 
+#slide1:checked ~ .controls label:nth-of-type(1),
+#slide2:checked ~ .controls label:nth-of-type(2),
+#slide3:checked ~ .controls label:nth-of-type(3),
+#slide4:checked ~ .controls label:nth-of-type(4),
+#slide5:checked ~ .controls label:nth-of-type(5),
+#slide6:checked ~ .controls label:nth-of-type(6),
+#slide7:checked ~ .controls label:nth-of-type(7),
+#slide8:checked ~ .controls label:nth-of-type(8),
+#slide9:checked ~ .controls label:nth-of-type(9),
+#slide10:checked ~ .controls label:nth-of-type(10),
+#slide11:checked ~ .controls label:nth-of-type(11),
+#slide12:checked ~ .controls label:nth-of-type(12),
+#slide13:checked ~ .controls label:nth-of-type(13),
+#slide14:checked ~ .controls label:nth-of-type(14),
+#slide15:checked ~ .controls label:nth-of-type(15),
+#slide16:checked ~ .controls label:nth-of-type(16),
+#slide17:checked ~ .controls label:nth-of-type(17),
+#slide18:checked ~ .controls label:nth-of-type(18),
+#slide19:checked ~ .controls label:nth-of-type(19),
+#slide20:checked ~ .controls label:nth-of-type(20),
+#slide21:checked ~ .controls label:nth-of-type(21),
+#slide22:checked ~ .controls label:nth-of-type(22),
+#slide23:checked ~ .controls label:nth-of-type(23),
+#slide24:checked ~ .controls label:nth-of-type(24),
+#slide25:checked ~ .controls label:nth-of-type(25),
+#slide26:checked ~ .controls label:nth-of-type(26),
+#slide27:checked ~ .controls label:nth-of-type(27),
+#slide28:checked ~ .controls label:nth-of-type(28),
+#slide29:checked ~ .controls label:nth-of-type(29),
+#slide30:checked ~ .controls label:nth-of-type(30) {
+	background: #ddd;
+}
+.wrapper label:after {
+	border: 2px solid #ddd;
+	content: " ";
+	display: block;
+	height: 12px;
+	left: -4px;
+	position: absolute;
+	top: -4px;
+	width: 12px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+}
+
+footer{
+    background-color: lightgray;
+    width: 100%;
+    height: 30px;
+}
