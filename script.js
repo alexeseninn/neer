@@ -9,6 +9,7 @@ PvButton.onclick = () => {
     .then(response => response.json())
     .then(json => {
         let arr = json;
+        console.log(arr[1]);
     });
 }
 
